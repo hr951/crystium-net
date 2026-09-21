@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Earth Top Utils</title>
+<meta name="description" content="Earth Top Utils のプライバシーポリシー。収集・保存する情報と、その取り扱いについて定めています。">
+<style>
+  :root {
+    --bg: #f6f8f7;
+    --text: #1c2824;
+    --muted: #586863;
+    --accent: #2c6b5a;
+    --rule: #d3dcd8;
+    --code-bg: #e6ece9;
+  }
+  :root:not([data-theme="light"]) { color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111816;
+      --text: #e2eae6;
+      --muted: #97a8a1;
+      --accent: #7dc4ad;
+      --rule: #2a3632;
+      --code-bg: #1c2723;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .wrap {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .site-name { font-weight: 700; letter-spacing: 0.02em; }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 1.25rem;
+    padding-bottom: 2px;
+  }
+  nav a:first-child { margin-left: 0; }
+  nav a:hover { color: var(--text); }
+  nav a[aria-current="page"] {
+    color: var(--text);
+    border-bottom: 2px solid var(--accent);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin: 2.5rem 0 0.25rem;
+  }
+  .enacted { color: var(--muted); margin: 0 0 2rem; font-size: 0.9rem; }
+
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 2.5rem 0 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--accent);
+  }
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0 0 1rem; padding-left: 1.6em; }
+  li { margin-bottom: 0.25rem; }
+  ul.dots { list-style: none; padding-left: 0; }
+  ul.dots li { padding-left: 1em; text-indent: -1em; }
+  ul.dots li::before { content: "・"; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--code-bg);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .other {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  @media (max-width: 30rem) {
+    .wrap { padding-top: 1.25rem; }
+    h1 { font-size: 1.5rem; margin-top: 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site-header">
+    <span class="site-name">Earth Top Utils</span>
+    <nav aria-label="規約ページ">
+      <a href="./privacypolicy.html" aria-current="page">プライバシーポリシー</a>
+      <a href="./terms.html">利用規約</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="policy">プライバシーポリシー</h1>
+    <p class="enacted"><time datetime="2026-09-21">2026年9月21日</time> 制定</p>
+
+    <p>本プライバシーポリシーは、Earth Top Utils (以下本サービス) を使用する上でのデータの取り扱いの方針を明文化したものです。</p>
+
+    <section>
+      <h2>第1条 適用</h2>
+      <p>本プライバシーポリシーは、本サービスのほか、派生サービスにも適用されるものとします。</p>
+      <p>また、本プライバシーポリシーは今後のBOTの開発状況によってアナウンスなく改定される場合がございます。</p>
+    </section>
+
+    <section>
+      <h2>第2条 収集する情報</h2>
+      <p>本サービスは、本サービスに搭載された機能を使用する場合や本サービスのセキュリティ向上のために、以下の情報を収集し、使用する場合があります。</p>
+      <ul class="dots">
+        <li>コマンドが実行されたサーバーID</li>
+        <li>導入したサーバーのID、名前、所有者のID</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第3条 保存する情報</h2>
+      <p>本サービスは、設定の保存や本サービスの管理のために以下の情報をDiscordから取得し、保存する場合があります。</p>
+      <ul class="dots">
+        <li>ユーザーID</li>
+        <li><code>/prestige</code>で入力したMinecraft ID</li>
+        <li>特定のチャンネルで送信したメッセージの内容</li>
+      </ul>
+      <p>なお、保存した情報は暗号化されず保存されます。</p>
+    </section>
+
+    <section>
+      <h2>第4条 情報の取り扱い</h2>
+      <p>本サービスが保存した情報は、本サービスに搭載している機能を使用する場合のみ使用し、データベース以外のプラットフォームやサービス、ユーザーには送信・公開いたしません。</p>
+    </section>
+  </main>
+
+  <footer class="other">
+    <a href="./terms.html">利用規約を読む</a>
+  </footer>
+</div>
+</body>
+</html>

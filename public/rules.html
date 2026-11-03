@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ルール | Crystium Network</title>
+<meta name="description" content="Crystium Network のMinecraftサーバー及び公式Discordの利用ルールです。">
+<style>
+:root {
+  --bg: #f6f8f7;
+  --text: #1c2824;
+  --muted: #586863;
+  --accent: #2c6b5a;
+  --rule: #d3dcd8;
+  --code-bg: #e6ece9;
+}
+:root:not([data-theme="light"]) { color-scheme: light dark; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111816;
+    --text: #e2eae6;
+    --muted: #97a8a1;
+    --accent: #7dc4ad;
+    --rule: #2a3632;
+    --code-bg: #1c2723;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI",
+    "Yu Gothic", "Noto Sans JP", Meiryo, sans-serif;
+  font-size: 1rem; line-height: 1.9;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+.site-header {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 0.5rem 1.5rem;
+  padding-bottom: 1rem; border-bottom: 1px solid var(--rule);
+}
+.site-name { font-weight: 700; letter-spacing: 0.02em; }
+nav { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; }
+nav a { color: var(--muted); text-decoration: none; padding-bottom: 2px; }
+nav a:hover { color: var(--text); }
+nav a[aria-current="page"] { color: var(--text); border-bottom: 2px solid var(--accent); }
+h1 { font-size: 1.75rem; line-height: 1.4; margin: 2.5rem 0 0.25rem; }
+.enacted { color: var(--muted); margin: 0 0 2rem; font-size: 0.9rem; }
+h2 {
+  font-size: 1.1rem; line-height: 1.5; margin: 2.5rem 0 0.75rem;
+  padding-left: 0.75rem; border-left: 4px solid var(--accent);
+}
+h3 { font-size: 1rem; line-height: 1.5; margin: 1.75rem 0 0.5rem; }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.6em; }
+li { margin-bottom: 0.25rem; }
+ul.dots { list-style: none; padding-left: 0; }
+ul.dots li { padding-left: 1em; text-indent: -1em; }
+ul.dots li::before { content: "・"; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+th, td { border: 1px solid var(--rule); padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
+th { background: var(--code-bg); }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.note { color: var(--muted); font-size: 0.92rem; }
+.other { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+@media (max-width: 30rem) {
+  .wrap { padding-top: 1.25rem; }
+  h1 { font-size: 1.5rem; margin-top: 2rem; }
+  table { font-size: 0.9rem; }
+  th, td { padding: 0.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+  <span class="site-name">Crystium Network</span>
+  <nav aria-label="規約・案内ページ">
+    <a href="./punishment.html">処罰方法</a>
+<a href="./ranks.html">ランク</a>
+<a href="./terms.html">利用規約</a>
+<a href="./rules.html" aria-current="page">ルール</a>
+  </nav>
+</header>
+<main>
+
+<h1 id="rules">ルール</h1>
+<p>公式Discordの利用及びCrystium Networkで遊ぶには、以下のルールを守らなくてはいけません。違反した場合は、利用規約及びサーバーでの処罰方法の通りに処罰を行います。</p>
+<section><h2>マインクラフトサーバーでのルール</h2>
+<h3>誹謗中傷や暴言の禁止</h3><ul class="dots"><li>他者に対する誹謗中傷及び暴言に値するチャット行為や、それらに相応するあらゆる建築を行う行為</li></ul>
+<h3>迷惑行為の禁止</h3><ul class="dots">
+<li>他者が迷惑と感じるようなあらゆる建造物の建築、チャット、煽りに該当する行為</li>
+<li>全体チャットでの連続発言や短い文字列を何度も発する行為</li>
+<li>運営に対しての催促等を行う行為</li></ul>
+<h3>負荷行為の禁止</h3><ul class="dots">
+<li>サーバー、接続プレイヤーに対して無為な負荷をかけるあらゆる行為</li>
+<li>サーバー内にて計算量を必要とする（より負荷をかける）ブロック（水、絵画、看板など）の過度な設置</li></ul>
+<h3>不正ログインの禁止</h3><ul class="dots">
+<li>他者の名前（ID）でログインする（接続する）行為</li><li>サブアカウントの使用、多数のアカウント作成・使用を行うこと</li><li>VPNを利用したサーバーへの接続</li></ul>
+<p>※ただし、事情により他のアカウントを使う必要がある場合やVPNを使う必要がある場合、VPNを使用していないにもかかわらずVPN使用中と表示される場合は、Discordのチケットからお問い合わせください。</p>
+<h3>一部外部ツール使用の禁止（使用可能かどうかが不安な場合はお問い合わせください）</h3><ul class="dots">
+<li>外部クライアントを使用する行為（全ての外部クライアントの使用を禁止しています）</li>
+<li>不正行為が可能なツール（チート、Mod）や他のプレイヤーとのハンデになりうるツール、及びそれらに該当する行為（例：X-Ray、ホイールクリック、チャタリング、マクロ、Hitbox等）</li></ul>
+<p>※上記の行為を他人がやっている（使っている）とわかっている状況で黙認していることが発覚した場合、相応の処罰が与えられます。</p>
+<h3>想定外の行為の禁止</h3><ul class="dots"><li>本来の動作とは異なるバグによる不正利用（バグはお問い合わせからお知らせください）</li></ul>
+<h3>宣伝行為の禁止</h3><ul class="dots"><li>当サーバー内で提供しているサービス以外の宣伝を行う行為（提供サービスの一例：ギルド宣伝等は許可します）</li></ul>
+<h3>遊ぶにあたる禁止行為</h3>
+<h3>ファーム行為</h3>
+<p>敵チームの拠点やそのゲームのコア（例：Annihilationの場合はネクサス）を完全に制圧しているにもかかわらず、XPやキル数稼ぎのためにプレイヤーを倒し続ける行為は禁止されています。敵拠点を制圧した後は、速やかにコアの破壊を行ってください。</p>
+<p>「制圧」とは、「戦況が有利であり、あなたやラッシュ中の仲間に大きな危険がなく、コアにダメージを与えられる位置にいること」を指します。</p>
+<p>ただし、敵のTPを用いたファームや、敵拠点以外の場所でのファームは許可されています。</p>
+<h3>水撒き行為</h3>
+<p>敵の侵攻を遅延するために水を撒くのは、正当な防衛の手段です。しかし、マップ内の木や建物の上から水を撒く行為は、その範疇に含まれません。我々が懸念しているのは過度な水撒きのみであるため、水を設置する場合は水流が発生しないようにしてください（ただし、パーミッション外に流れてしまう場合はやむを得ません）。</p>
+<h3>グリフ行為</h3>
+<p>以下の行為はグリフ行為として処罰されます。</p><ul class="dots">
+<li>明らかに味方が隠したと思われる物を故意に拾得する</li><li>味方に害を与える建造物を建築する</li><li>防衛を偽って放置する</li><li>その他、味方への妨害行為であると運営が判断した場合</li></ul>
+<h3>クロスチーミング</h3><p>チーム制のゲームにおいて、自身とは異なるチームとのチーミング行為</p>
+<h3>その他の禁止行為</h3><ul class="dots">
+<li>公序良俗に反するスキンの使用</li>
+<li>当サーバー、ウェブサイトにおけるDoS・DDoS攻撃、なりすまし行為、スパム行為</li>
+<li>トラップ・金銭目的の狩場の作成：許可なくあらゆるMOBトラップやポイントを稼ぐ目的の狩場を作成する行為</li>
+<li>侮辱的、差別的発言禁止：人種、性別、宗教、信条、門地、同性愛の嫌悪や差別など、他者への侮辱に値するあらゆる行為</li>
+<li>利用規約に違反する行為、運営が処罰に値すると判断する行為</li>
+<li>他者が規約及びルール違反をしていることを知っているにもかかわらず、それを運営に隠す行為</li>
+<li>ギルドを作成して他の人にギルドを渡すことを繰り返して量産する行為</li></ul>
+</section>
+<section><h2>公式Discordでのルール</h2>
+<p>公式Discordのルールは、このルールページに書いていることが適用されます。</p>
+<h3>誹謗中傷や暴言の禁止</h3><ul class="dots"><li>他者に対する誹謗中傷及び暴言に値するチャットや、それらに相応するあらゆる行為</li></ul>
+<h3>迷惑行為の禁止</h3><ul class="dots"><li>他者が迷惑と感じるようなあらゆるチャットなどの行為</li><li>運営に対しての催促等を行う行為</li></ul>
+<h3>不正ログインの禁止</h3><ul class="dots"><li>他者の名前（ID）でログインする（接続する）行為</li><li>サブアカウントの使用、多数のアカウント作成・使用を行うこと</li></ul>
+<p>※ただし、事情により他のアカウントを使う必要がある場合はDiscordのチケットからお問い合わせください。</p>
+<h3>宣伝行為の禁止</h3><ul class="dots"><li>当サーバー内で提供しているサービス以外の宣伝を行う行為（提供サービスの一例：ギルド宣伝等は許可します）</li></ul>
+<h3>その他の禁止行為</h3><ul class="dots">
+<li>利用規約に違反する行為、運営が処罰に値すると判断する行為</li>
+<li>他者が規約及びルール違反をしていることを知っているにもかかわらず、それを運営に隠す行為</li>
+<li>チケット内容を外部に漏らす行為</li>
+<li>運営への暴言・誹謗中傷・嫌がらせ・モチベーションを著しく妨害する行為</li>
+<li>公式DiscordのNSFWチャンネルにてスパム行為、メンションをする行為</li></ul>
+</section>
+
+</main>
+<footer class="other">
+  <nav aria-label="関連ページ"><a href="./punishment.html">処罰方法</a>
+<a href="./ranks.html">ランク</a>
+<a href="./terms.html">利用規約</a>
+<a href="./rules.html" aria-current="page">ルール</a></nav>
+</footer>
+</div>
+</body>
+</html>

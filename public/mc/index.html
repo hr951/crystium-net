@@ -96,6 +96,15 @@ p:last-child { margin-bottom: 0; }
 .staff-info { min-width: 0; }
 .staff-role { display: block; color: var(--accent); font-size: 0.75rem; font-weight: 700; }
 .staff-name { display: block; overflow-wrap: anywhere; font-weight: 700; }
+.debugger-list {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem; margin: 0; padding: 0; list-style: none;
+}
+.debugger-list li {
+  padding: 0.55rem 0.8rem; border: 1px solid var(--rule);
+  border-radius: 0.55rem; background: var(--bg); font-weight: 600;
+  overflow-wrap: anywhere;
+}
 .other { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
 footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
 @media (max-width: 42rem) {
@@ -105,7 +114,7 @@ footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
   .server-shot { aspect-ratio: 16 / 9; }
 }
 @media (max-width: 25rem) {
-  .staff-grid { grid-template-columns: 1fr; }
+  .staff-grid, .debugger-list { grid-template-columns: 1fr; }
   .panel { padding: 1rem; }
 }
 </style>
@@ -159,7 +168,7 @@ footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
               </div>
             </article>
             <article class="staff-card">
-              <img class="staff-avatar" src="/images/staff-admin.png" alt="Admin のアイコン"
+              <img class="staff-avatar" src="/images/admin.png" alt="Admin のアイコン"
                    onerror="this.src='https://cdn.discordapp.com/embed/avatars/1.png';">
               <div class="staff-info">
                 <span class="staff-role">Admin</span>
@@ -167,10 +176,18 @@ footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
               </div>
             </article>
             <article class="staff-card">
-              <img class="staff-avatar" src="/images/staff-manager.png" alt="Manager のアイコン"
+              <img class="staff-avatar" src="/images/manager.png" alt="Manager のアイコン"
                    onerror="this.src='https://cdn.discordapp.com/embed/avatars/2.png';">
               <div class="staff-info">
                 <span class="staff-role">Manager</span>
+                <span class="staff-name">運営メンバー名</span>
+              </div>
+            </article>
+            <article class="staff-card">
+              <img class="staff-avatar" src="/images/moderator.png" alt="Manager のアイコン"
+                   onerror="this.src='https://cdn.discordapp.com/embed/avatars/2.png';">
+              <div class="staff-info">
+                <span class="staff-role">Moderator</span>
                 <span class="staff-name">運営メンバー名</span>
               </div>
             </article>
@@ -182,7 +199,33 @@ footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
                 <span class="staff-name">AT719</span>
               </div>
             </article>
+            <article class="staff-card">
+              <img class="staff-avatar" src="/images/helper.png" alt="Developer のアイコン"
+                   onerror="this.src='https://cdn.discordapp.com/embed/avatars/3.png';">
+              <div class="staff-info">
+                <span class="staff-role">Helper</span>
+                <span class="staff-name">運営メンバー名</span>
+              </div>
+            </article>
+            <article class="staff-card">
+              <img class="staff-avatar" src="/images/builder.png" alt="Developer のアイコン"
+                   onerror="this.src='https://cdn.discordapp.com/embed/avatars/3.png';">
+              <div class="staff-info">
+                <span class="staff-role">Builder</span>
+                <span class="staff-name">運営メンバー名</span>
+              </div>
+            </article>
           </div>
+        </section>
+
+        <section class="panel" style="margin-top:1.25rem" aria-labelledby="debugger-title">
+          <h2 id="debugger-title">Debuggers</h2>
+          <p class="note">サーバーのテストや不具合の報告に協力してくれたメンバー</p>
+          <ul class="debugger-list">
+            <li>rikinei612</li>
+            <li>GrEatLashG</li>
+            <li>DRchagama</li>
+          </ul>
         </section>
       </div>
 
@@ -194,7 +237,7 @@ footer .copyright { margin-top: 1rem; color: var(--muted); font-size: 0.82rem; }
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
         </iframe>
         <p class="note" style="margin-top:0.8rem">最新のお知らせやサーバーに関する質問は、公式Discordをご確認ください。</p>
-        <p><a href="https://discord.gg/REPLACE_INVITE" target="_blank" rel="noopener noreferrer">公式Discordに参加する</a></p>
+        <p><a href="https://discord.gg/dzUwG2uWQU" target="_blank" rel="noopener noreferrer">公式Discordに参加する</a></p>
       </aside>
     </div>
   </main>
